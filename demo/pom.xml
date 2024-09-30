@@ -52,7 +52,16 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+          <version>3.0.0-M5</version>
+          <configuration>
+            <includes>
+              <include>AuthorTest.java</include>
+              <include>BookTest.java</include>
+              <include>PatronTest.java</include>
+              <include>PeriodicalTest.java</include>
+            </includes>
+            <skipTests>false</skipTests>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

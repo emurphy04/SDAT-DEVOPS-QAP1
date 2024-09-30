@@ -20,9 +20,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.11.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -51,8 +51,19 @@
           <version>3.8.0</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+          <!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
+          <version>3.0.0-M5</version>
+          <configuration>
+            <includes>
+              <include>AuthorTest.java</include>
+              <include>BookTest.java</include>
+              <include>PatronTest.java</include>
+              <include>PeriodicalTest.java</include>
+            </includes>
+            <skipTests>false</skipTests>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
@@ -75,6 +86,7 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
