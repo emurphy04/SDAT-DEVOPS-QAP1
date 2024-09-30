@@ -2,7 +2,7 @@
 Test set: com.libraryproject.PatronTest
 -------------------------------------------------------------------------------
 Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! - in com.libraryproject.PatronTest
-com.libraryproject.PatronTest.testSettersAndAddToList  Time elapsed: 0.004 s  <<< FAILURE!
-org.opentest4j.AssertionFailedError: expected: <Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed x: , Hunger Games> but was: <Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed: , Hunger Games>
+com.libraryproject.PatronTest.testSettersAndAddToList  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed s: , Hunger Games> but was: <Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed: , Hunger Games>
 	at com.libraryproject.PatronTest.testSettersAndAddToList(PatronTest.java:33)
 

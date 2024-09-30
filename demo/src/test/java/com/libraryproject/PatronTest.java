@@ -29,12 +29,12 @@ public class PatronTest {
         patron.setIsEmployee(true);
         patron.addToList("Hunger Games");
 
-        String expected = "Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed x: , Hunger Games";
+        String expected = "Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed s: , Hunger Games";
         assertEquals(expected, patron.toString());
 
         // Test adding multiple items to the list
         patron.addToList("Harry Potter");
-        expected = "Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed x: , Hunger Games, Harry Potter";
+        expected = "Tyra White is an employee, | 7096313003 | 10 Hawker Cres | Borrowed s: , Hunger Games, Harry Potter";
         assertEquals(expected, patron.toString());
     }
 }
