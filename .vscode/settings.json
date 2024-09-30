@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "demo\\target\\classes"
+    ],
+    "java.project.referencedLibraries": [],
+    "java.debug.settings.onBuildFailureProceed": true
+}
