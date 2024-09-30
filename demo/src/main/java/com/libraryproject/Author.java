@@ -27,7 +27,7 @@ public class Author implements Serializable{
 
     @Override
     public String toString() {
-        return name+", born in "+dob+", writer of "+items;
+        return name+", born on "+dob+", writer of "+items;
     }
 
 
