@@ -11,7 +11,7 @@ jobs:
     runs-on: windows-latest  # This will run the workflow on Windows
 
     steps:
-      - name: Checkout code
+      - name: Standard Checkout
         uses: actions/checkout@v2
 
       - name: Set up JDK 17
