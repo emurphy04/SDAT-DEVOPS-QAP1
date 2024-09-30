@@ -19,11 +19,9 @@ jobs:
       with:
         java-version: '11'
 
-    - name: Build with Gradle/Maven
-      run: |
-        gradlew build # or 'mvn install' if using Maven
-        # Make sure to use gradlew.bat for Gradle on Windows
+    - name: Build with Maven
+      run: mvn install
 
     - name: Run Tests
-      run: |
-        gradlew test # or 'mvn test' if using Maven
+      run: mvn test
+
