@@ -44,9 +44,9 @@ public class Patron implements Serializable{
     @Override
     public String toString() {
         if(this.isEmployee){
-            return name+" is an employee, | "+phone+" | "+address+" | Borrowed: "+list;
+            return name+" is an employee, | "+phone+" | "+address+" | Borrowed X: "+list;
         } else {
-            return name+" is a student, | "+phone+" | "+address+" | Borrowed: "+list;
+            return name+" is a student, | "+phone+" | "+address+" | Borrowed X: "+list;
         }
     }
 }
