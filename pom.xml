@@ -55,6 +55,7 @@
           <version>3.2.5</version>
           <configuration>
             <testFailureIgnore>false</testFailureIgnore>  <!-- Ensure failures are not ignored -->
+            <testSourceDirectory>src/main/test/java/com/libraryproject</testSourceDirectory>
           </configuration>
         </plugin>
         <plugin>
